@@ -14,11 +14,29 @@ Requires >PHP 7.2
 
 ### Installing
 
+This project is a ----- package.
 To install this library to your project run:
 
 ```
-Give the example
+
 ```
+
+## Using the Project
+
+To use the project simply install the package and run:
+
+```
+
+```
+
+### Reporter
+
+Supported formats:
+
+- raw - returns an object containing arrays of the data
+- file - returns a formatted string of the data saved to a file called benchmark.txt
+- string - returns a formatted string of the data
+- json -returns the data is a JSON format
 
 ## Running Tests
 
@@ -41,7 +59,7 @@ phpunit ./tests/test.php
 To deploy updates for this package run:
 
 ```
-Run this shit
+
 ```
 
 ## Built With
