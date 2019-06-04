@@ -21,9 +21,11 @@ To install this library to your project run:
 composer require eandrews737/php-benchmarker
 ```
 
+[Find it here](https://packagist.org/packages/eandrews737/php-benchmarker)
+
 ## Using the Project
 
-To use the project simply install the package and run:
+To use the project simply install the package and add:
 
 ```
 
@@ -54,13 +56,7 @@ Here's how to run it:
 phpunit ./tests/test.php
 ```
 
-## Deployment
-
-To deploy updates for this package run:
-
-```
-
-```
+While in the root directory, of course.
 
 ## Built With
 
