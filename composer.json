@@ -1,5 +1,6 @@
 {
   "name": "eandrews737/php-benchmarker",
+  "version": "1.0.0",
   "type": "library",
   "description": "Will Benchmark PHP Functions For Food",
   "keywords": [
