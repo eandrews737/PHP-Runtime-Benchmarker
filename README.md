@@ -31,6 +31,14 @@ To use the project simply install the package and add:
 
 ```
 
+parameters:
+
+- `functions` - Array of functions
+- `function names` - Array of function names (must be equal length to the first array)
+- `executionAmount` (optional) - Amount of times to test each function. defaults to 1.
+- `isAscSort` (optional) - Whether or not to arrange the info asc or des. Defaults to true.
+- `printStyle` (optional) - Style to print out info. Defaults to json. See next section for more options.
+
 ### Reporter
 
 Supported formats:
