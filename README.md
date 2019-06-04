@@ -31,7 +31,7 @@ To use the project simply install the package and add:
 
 ```
 
-##& Parameters
+### Parameters
 
 - `functions` - Array of functions
 - `function names` - Array of function names (must be equal length to the first array)
