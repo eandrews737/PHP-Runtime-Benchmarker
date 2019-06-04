@@ -1,6 +1,6 @@
 {
   "name": "eandrews737/benchmarker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "library",
   "description": "Will Benchmark PHP Functions For Food",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-0": {
-      "benchmarker": "src/"
+      "benchmarker\\": "src/"
     }
   },
   "require-dev": {
