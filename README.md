@@ -28,7 +28,15 @@ composer require eandrews737/benchmarker
 To use the project simply install the package and add:
 
 ```
+require 'vendor/eandrews737/benchmarker/src/benchmark.php';
+use Benchmarker\Benchmarker;
+```
 
+Then make a call to the benchmark function.
+Example Call:
+
+```
+Benchmarker::benchmark(["function1", "function2"], ["function name 1", 'function name 2'], 5, true, 'json');
 ```
 
 ### Parameters
