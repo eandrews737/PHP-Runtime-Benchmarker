@@ -4,6 +4,11 @@ A PHP library that takes in an array of functions and gives the user a report th
 So far the functions will be ranked by min, max or average times.
 The report is customizable and currently supports JSON, console printing or file printing.
 
+Current Version:
+```
+0.0.5
+```
+
 ## Getting Started
 
 ### Prerequisites
@@ -21,7 +26,7 @@ To install this library to your project run:
 composer require eandrews737/benchmarker
 ```
 
-[Find it here](https://packagist.org/packages/eandrews737/php-benchmarker)
+[Find it on Packagist](https://packagist.org/packages/eandrews737/php-benchmarker)
 
 ## Using the Project
 
