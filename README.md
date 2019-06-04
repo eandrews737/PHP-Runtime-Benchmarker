@@ -51,10 +51,10 @@ Benchmarker::benchmark(["function1", "function2"], ["function name 1", 'function
 
 Supported formats:
 
-- raw - returns an object containing arrays of the data
-- file - returns a formatted string of the data saved to a file called benchmark.txt
-- string - returns a formatted string of the data
-- json - returns the data is a JSON format
+- `raw` - returns an object containing arrays of the data
+- `file` - returns a formatted string of the data saved to a file called benchmark.txt
+- `string` - returns a formatted string of the data
+- `json` - returns the data is a JSON format
 
 ## Running Tests
 
