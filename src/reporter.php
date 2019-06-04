@@ -1,5 +1,5 @@
 <?php 
-namespace reporter;
+namespace Reporter;
 
 class Reporter
 {

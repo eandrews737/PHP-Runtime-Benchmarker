@@ -1,5 +1,5 @@
 <?php 
-namespace comparator;
+namespace Comparator;
 
 class Comparator
 {

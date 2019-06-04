@@ -1,11 +1,11 @@
 <?php 
-namespace benchmarker;
+namespace Benchmarker;
 
 require_once('comparator.php');
 require_once('reporter.php');
 
-use comparator\Comparator;
-use reporter\Reporter;
+use Comparator\Comparator;
+use Reporter\Reporter;
 
 class Benchmarker
 {

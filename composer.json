@@ -17,8 +17,8 @@
     "php": ">=7.2.0"
   },
   "autoload": {
-    "psr-0": {
-      "benchmarker\\": "src/"
+    "psr-4": {
+      "Benchmarker\\": "src/"
     }
   },
   "require-dev": {
