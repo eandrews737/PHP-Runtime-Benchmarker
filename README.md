@@ -14,11 +14,11 @@ Requires >PHP 7.2
 
 ### Installing
 
-This project is a ----- package.
+This project is a `composer` package.
 To install this library to your project run:
 
 ```
-
+composer require eandrews737/php-benchmarker
 ```
 
 ## Using the Project
@@ -36,7 +36,7 @@ Supported formats:
 - raw - returns an object containing arrays of the data
 - file - returns a formatted string of the data saved to a file called benchmark.txt
 - string - returns a formatted string of the data
-- json -returns the data is a JSON format
+- json - returns the data is a JSON format
 
 ## Running Tests
 
@@ -65,7 +65,7 @@ To deploy updates for this package run:
 ## Built With
 
 - [phpunit](https://phpunit.de/getting-started/phpunit-8.html) - Unit Testing Framework
-- [Composer]https://getcomposer.org/) - Dependency Management
+- [Composer](https://getcomposer.org/) - Dependency Management
 
 ## Authors
 
