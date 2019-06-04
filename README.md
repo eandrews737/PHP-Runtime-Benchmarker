@@ -18,7 +18,7 @@ This project is a `composer` package.
 To install this library to your project run:
 
 ```
-composer require eandrews737/php-benchmarker
+composer require eandrews737/benchmarker
 ```
 
 [Find it here](https://packagist.org/packages/eandrews737/php-benchmarker)
