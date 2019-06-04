@@ -26,7 +26,7 @@ To install this library to your project run:
 composer require eandrews737/benchmarker
 ```
 
-[Find it on Packagist](https://packagist.org/packages/eandrews737/php-benchmarker)
+[Find it on Packagist](https://packagist.org/packages/eandrews737/benchmarker)
 
 ## Using the Project
 
