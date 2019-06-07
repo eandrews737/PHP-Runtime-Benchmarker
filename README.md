@@ -46,11 +46,13 @@ Benchmarker::benchmark(["function1", "function2"], ["function name 1", 'function
 
 ### Parameters
 
-- `functions` (array) - Array of functions
-- `function names` (array) - Array of function names (must be equal length to the first array)
-- `executionAmount` (optional int) - Amount of times to test each function. defaults to 1.
+- `functions` (array) - Array of functions.
+- `function names` (array) - Array of function names (must be equal length to the first array).
+- `executionAmount` (optional int) - Amount of times to test each function. Defaults to 1.
 - `isAscSort` (optional boolean) - Whether or not to arrange the info asc or des. Defaults to true.
-- `printStyle` (optional string) - Style to print out info. Defaults to json. See next section for more options.
+- `printStyle` (optional string) - Style to print out info. Defaults to json. 
+
+See next section for more details about `printStyle`.
 
 ### Reporter
 
