@@ -1,6 +1,6 @@
 # PHP Function Benchmarker
 
-A PHP library that takes in an array of functions and gives the user a report that ranks the runtime performance of each one.
+A PHP package that takes in an array of functions and gives the user a report that ranks the runtime performance of each one.
 So far the functions will be ranked by min, max or average times.
 The report is customizable and currently supports JSON, console printing or file printing.
 
