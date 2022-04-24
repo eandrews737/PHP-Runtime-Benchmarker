@@ -1,11 +1,18 @@
-<?php 
+<?php declare(strict_types=1);
 namespace Reporter;
+
+use Comparator\Comparator;
 
 class Reporter
 {
-    public function printReport(object $data, $style = 'string')
+    /**
+     * @param object $data
+     * @param string $style
+     * @return Comparator
+     */
+    public function printReport(object $data, $style = 'string'): Comparator
     {
-        switch($style){
+        switch (strtolower($style)) {
             case "json":
                 return self::jsonPrint($data);
             case "file":
@@ -18,28 +25,39 @@ class Reporter
         }
     }
 
-    // returns with JSON formatting
-    private function jsonPrint(object $data) 
+    /**
+     * @param object $data
+     * @return string|null
+     */
+    private function jsonPrint(object $data): ?string
     {
         return json_encode($data);
     }
 
-    // prints data to console
-    private function stringPrint(object $data) 
+    /**
+     * @param object $data
+     * @return string
+     */
+    private function stringPrint(object $data): string
     {
         return self::formatPrint($data);
     }
 
-    // prints data to a writeable file
-    private function filePrint(object $data)
+    /**
+     * @param object $data
+     */
+    private function filePrint(object $data): void
     {
         $stdout = fopen('benchmark_results.txt', 'w');
-        fputs($stdout, self::formatPrint($data)); 
+        fputs($stdout, self::formatPrint($data));
         fclose($stdout);
     }
 
-    // formats for console or file print
-    private function formatPrint(object $data)
+    /**
+     * @param object $data
+     * @return string
+     */
+    private function formatPrint(object $data): string
     {
         $printString = '';
 
@@ -54,20 +72,29 @@ class Reporter
         return $printString;
     }
 
-    private function orderStyle(string $title, bool $isAscSort)
+    /**
+     * @param string $title
+     * @param bool $isAscSort
+     * @return string
+     */
+    private function orderStyle(string $title, bool $isAscSort): string
     {
-        if($isAscSort)
+        if ($isAscSort) {
             return $title . " (Ascending)\n\n";
-        else
+        } else {
             return $title . " (Descending)\n\n";
+        }
     }
 
-    // iterate through all the arrays
-    private function stringifyArray(array $times)
+    /**
+     * @param array $times
+     * @return string
+     */
+    private function stringifyArray(array $times): string
     {
         $tempString = '';
 
-        for($i=0; $i < count($times); $i++){
+        for ($i=0; $i < count($times); $i++) {
             $tempString .= $i+1 . '. ';
             $tempString .= ($times[$i][0] . " - ");
             $tempString .= ($times[$i][1] . "\n");

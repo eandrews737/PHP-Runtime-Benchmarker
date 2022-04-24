@@ -1,16 +1,18 @@
-<?php 
+<?php declare(strict_types=1);
 namespace Comparator;
 
 class Comparator
 {
     public $avgTimes = [];
     public $functionTimes = [];
-    public $isAscSort = true; 
+    public $isAscSort = true;
 
-    // sort min, max and average data
+    /**
+     * @param bool $isAscSort
+     */
     public function sortData($isAscSort = true): void
-    {        
-        if($isAscSort) {
+    {
+        if ($isAscSort) {
             sort($this->avgTimes);
             sort($this->functionTimes);
         } else {
@@ -19,7 +21,11 @@ class Comparator
         }
     }
 
-    // add data to object
+    /**
+     * @param string $functionName
+     * @param float $highestTime
+     * @param float $average
+     */
     public function collectData(string $functionName, float $highestTime, float $average): void
     {
         array_push($this->functionTimes, array($functionName, $highestTime));
