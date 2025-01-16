@@ -48,7 +48,7 @@ Benchmarker::benchmark(["function1", "function2"], 5, true, 'json');
 
 - `functions` (required array) - Array of functions.
 - `executionAmount` (int) - Amount of times to test each function. Defaults to 1.
-- `isAscSort` (boolean) - Whether or not to arrange the info ASC or DESC. Defaults to ASC.
+- `isAscSort` (boolean) - Whether or not to arrange the info in an ascending or descending order. Defaults to ascending.
 - `printStyle` (string) - Printing format. Defaults to JSON. 
 
 See next section for more details about `printStyle`.
